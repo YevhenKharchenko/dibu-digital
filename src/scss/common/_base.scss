@@ -30,23 +30,26 @@ html {
 .container {
   width: 100%;
   max-width: 375px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
     max-width: 1440px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 160px;
+    padding-left: 160px;
   }
 }
 
 .section-title {
-  font-family: 'Fredoka One', sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #260036;
+  font-family: 'Onest', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #f3561d;
+
+  @include media(desktop) {
+    font-size: 40px;
+  }
 }
