@@ -1,0 +1,131 @@
+.testimonials-section {
+  padding: 40px 0;
+  scroll-margin-top: 60px;
+
+  @include media(desktop) {
+    padding: 80px 0;
+    scroll-margin-top: 70px;
+  }
+}
+
+.testimonials-title {
+  margin-bottom: 40px;
+}
+
+.testimonials-text {
+  font-family: 'Onest', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #a2a2a2;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+.testimonials-swiper-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.testimonials-swiper-container.show {
+  visibility: visible;
+}
+
+.testimonials-slide {
+  border: 1px solid #6b6b6b;
+  border-radius: 16px;
+  padding: 16px;
+  max-width: 343px;
+  height: 349px !important;
+
+  @include media(desktop) {
+    border-radius: 32px;
+    padding: 24px 32px;
+    max-width: 544px;
+    height: 317px !important;
+  }
+}
+
+.testimonials-slide-title {
+  font-family: 'Onest', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f3561d;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.testimonials-slide-subtitle {
+  font-family: 'Onest', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #a2a2a2;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.testimonials-slide-text {
+  font-family: 'Onest', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fdfdfd;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.testimonials-controls {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 24px;
+  gap: 32px;
+
+  @include media(desktop) {
+    margin-top: 40px;
+  }
+}
+
+.arrow-btn {
+  transition: transform 0.3s ease-in-out;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media(desktop) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
