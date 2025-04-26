@@ -1,107 +1,101 @@
 .about-section {
-  padding-top: 28px;
-  padding-bottom: 74px;
+  padding: 40px 0;
   scroll-margin-top: 60px;
-  box-shadow: inset 0 0 44px 12px #019df1;
-  background-image: url(../img/privacy/privacy-bg-desk.png),
-    linear-gradient(180deg, #caf2ff 0%, #66c7f8 50%, #019df1 100%);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
   @include media(desktop) {
     scroll-margin-top: 70px;
-    padding-bottom: 112px;
-  }
-}
-
-.about-container {
-  @include media(desktop) {
-    padding-left: 136px;
-    padding-right: 136px;
+    padding: 80px 0;
   }
 }
 
 .about-title {
-  margin-bottom: 14px;
-}
-
-.about-secondary-title {
-  font-family: 'Fredoka One', sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 1.63636;
-  text-align: center;
-  color: #260036;
-  margin-bottom: 22px;
-
-  @include media(desktop) {
-    margin-bottom: 34px;
-  }
+  margin-bottom: 40px;
 }
 
 .about-text {
-  font-weight: 400;
+  font-family: 'Onest', sans-serif;
+  font-weight: 600;
   font-size: 18px;
-  line-height: 2;
-  text-align: center;
-  color: #260036;
-  margin-bottom: 18px;
+  line-height: 1.5;
+  color: #a2a2a2;
+  margin-bottom: 40px;
 
   @include media(desktop) {
-    margin-bottom: 54px;
+    font-size: 20px;
+    max-width: 740px;
+  }
+}
+
+.about-span {
+  color: #fdfdfd;
+}
+
+.about-secondary-title {
+  font-family: 'Onest', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  text-align: left;
+  color: #f3561d;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+}
+
+.about-values-title {
+  @include media(desktop) {
+    margin-bottom: 40px;
   }
 }
 
 .about-list {
-  margin-bottom: 18px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
 
   @include media(desktop) {
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 35px 12px;
-    margin-bottom: 70px;
+    gap: 32px;
   }
 }
 
 .about-list-item {
   @include media(desktop) {
-    max-width: 578px;
+    max-width: calc((100% - 96px) / 4);
   }
 }
 
+.about-item-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
 .about-list-item-title {
-  font-family: 'Fredoka One', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.8;
+  font-family: 'Onest', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
   text-align: center;
-  margin-bottom: 6px;
+  color: #f3561d;
 
   @include media(desktop) {
-    text-align: left;
+    font-size: 20px;
   }
 }
 
 .about-list-item-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.44444;
-  text-align: center;
+  font-family: 'Onest', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #a2a2a2;
 
   @include media(desktop) {
-    text-align: left;
+    font-size: 18px;
   }
-}
-
-.about-bottom-text {
-  font-family: 'Fredoka One', sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 1.63636;
-  text-align: center;
-  color: #260036;
 }
