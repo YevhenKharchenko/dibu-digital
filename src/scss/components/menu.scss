@@ -5,12 +5,12 @@
   padding: 28.5px 24px;
   max-width: 375px;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   position: fixed;
   top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  transform: none;
   z-index: 10;
 }
 
@@ -30,7 +30,7 @@
   transition: all 0.3s ease-in-out;
 
   &:active {
-    // color: $_white_text_color;
+    color: #fdfdfd;
   }
 }
 

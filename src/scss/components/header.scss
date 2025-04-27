@@ -13,9 +13,6 @@
   }
 }
 
-.header-container {
-}
-
 .nav {
   display: flex;
   align-items: center;
@@ -41,20 +38,24 @@
   font-size: 16px;
   line-height: 1.5;
   color: #a2a2a2;
+  transition: color 0.3s ease-in-out;
 
   &:hover,
   &.active {
+    color: #fdfdfd;
   }
 }
 
 .nav-list-link.active {
-  color: #caf903;
+  color: #fdfdfd;
 }
 
 .nav-btn {
   background-color: transparent;
   width: 44px;
   height: 44px;
+  justify-content: center;
+  align-items: center;
 
   @include media(desktop) {
     display: none;
@@ -64,8 +65,10 @@
 .close-btn {
   display: none;
   background-color: transparent;
-  width: 22px;
-  height: 22px;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
 
   @include media(desktop) {
     display: none;

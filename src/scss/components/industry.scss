@@ -5,7 +5,6 @@
   scroll-margin-top: 60px;
 
   @include media(desktop) {
-    scroll-margin-top: 70px;
     border-radius: 0 0 64px 64px;
     padding: 80px 0;
   }

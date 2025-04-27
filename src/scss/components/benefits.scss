@@ -5,7 +5,6 @@
   scroll-margin-top: 60px;
 
   @include media(desktop) {
-    scroll-margin-top: 70px;
     border-radius: 64px 64px 0 0;
     padding: 80px 0;
   }
@@ -56,9 +55,6 @@
   li::marker {
     color: #f3561d;
   }
-}
-
-.benefits-list-item {
 }
 
 .benefits-item-text {
