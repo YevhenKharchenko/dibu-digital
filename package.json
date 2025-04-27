@@ -11,6 +11,7 @@
     "deploy": "netlify deploy -p"
   },
   "devDependencies": {
+    "glob": "^11.0.2",
     "netlify-cli": "^17.30.0",
     "sass": "^1.86.3",
     "sharp": "^0.34.1",
@@ -21,7 +22,6 @@
   "author": "Yevhen Kharchenko <evgenvalerych@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "glob": "^11.0.1",
     "modern-normalize": "^3.0.1",
     "swiper": "^11.2.6",
     "vite-plugin-full-reload": "^1.0.5",
